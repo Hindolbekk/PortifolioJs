@@ -269,6 +269,7 @@ a.btn:hover::before{
     text-align: center;
 }
 .img-box img{
+    object-fit: contain;
     width: 100%;
     max-width: 355px;
     height: auto;
