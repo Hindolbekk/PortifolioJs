@@ -547,4 +547,78 @@ footer a i{
     font-size: 2rem;
     color: var(--secon-bg-color);
 }
-/* responsive qilamiz----------------->
+/* responsive qilamiz----------------->*/
+@media(max-width:990px){
+    header,header.sticky{
+        padding: 15px 5%;
+    }
+    footer{
+        padding: 15px 5%;
+    }
+    section{
+        padding: 50px 5%;
+    }
+    .navList a{
+        padding: 8px 15px;
+    }
+    :root{
+        --big-font:2.2rem;
+    --norma-font:1.8rem;
+    --neon-box-shadow:0 0 .8rem #12f7ff;
+    --h2-font:3rem;
+    }
+    .home-content{
+        margin-top: 5rem;
+    }
+    .social-icons{
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width:768px){
+  #menu-icon{
+    display: block;
+    transition: all .4s ease;
+  }
+  #menu-icon.bx-x{
+    transform:  rotate(-180deg);
+  }
+  .navList{
+    display: flex;
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    background: var(--bg-color);
+    text-align: left;
+    padding: 0 5%;
+    transition:  all .45s ease;
+  }
+  .navList a{
+    display: block;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .navList.open{
+ top: 100%;
+  }
+  .home{
+    grid-template-columns: 1fr;
+  }
+  .home-image{
+    margin-bottom: 5rem;
+  }
+  .liquid-shape{
+    width: 80%;
+    left: 10%;
+    top: 13%;
+  }
+  .about{
+    flex-direction: column-reverse;
+  }
+}
+
+@media(max-width:420px){
+    
+}
