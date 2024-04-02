@@ -84,6 +84,7 @@ span{
     color: var(--text-color);
     font-weight: 700;
     padding: 10px 20px;
+    animation: slideAnimation 1s ease forwards;
 }
 .navList a:hover{
   color: var(--hover-color);
@@ -547,6 +548,36 @@ footer a i{
     font-size: 2rem;
     color: var(--secon-bg-color);
 }
+/* sectionlarga o'tgan ularni sekinroq chiqishi---------*/
+ 
+.scroll-scale{
+    opacity: 0;
+    transform: scale(.9);
+    transition: all 2s;
+}
+.scroll-bottom{
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 3s;
+}
+.scroll-top{
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 3s;
+}
+.show-items{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
 /* responsive qilamiz----------------->*/
 @media(max-width:990px){
     header,header.sticky{
